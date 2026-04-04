@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(49, 49, 49);
+}
+.frame {
+  width: 90vw;
+  height: 90vh;
+  background-color: rgb(219, 30, 30);
+  box-sizing: border-box;
+  border-radius: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.display {
+  width: 80vw;
+  height: 75vh;
+  flex: 1;
+  background-color: rgb(224, 224, 224);
+  border-radius: 5vw;
+  position: relative;
+}
+.decorativeBtn {
+  width: 8vw;
+  height: 8vw;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #363636;
+  border-radius: 100%;
+}
+.decorativeLabel {
+  color: gold;
+  flex: 0 1 auto;
+  flex-basis: 50px;
+  font-size: 2em;
+  text-align: center;
+  align-content: center;
+  font-family: "Brush Script MT", cursive;
+}
+.lowerDecorativeButtons{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 1% 1% 1%;
+}
