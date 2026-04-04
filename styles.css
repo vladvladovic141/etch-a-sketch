@@ -25,6 +25,9 @@ body {
   background-color: rgb(224, 224, 224);
   border-radius: 5vw;
   position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .decorativeBtn {
   width: 8vw;
@@ -42,10 +45,18 @@ body {
   align-content: center;
   font-family: "Brush Script MT", cursive;
 }
-.lowerDecorativeButtons{
+.lowerDecorativeButtons {
   display: flex;
   width: 100%;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0 1% 1% 1%;
+}
+.gridRow {
+  flex: 1;
+  display: flex;
+}
+.gridElement {
+  border: 2px, solid, black;
+  flex: 1;
 }
