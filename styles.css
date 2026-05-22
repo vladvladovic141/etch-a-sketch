@@ -22,7 +22,7 @@ body {
   width: 80vw;
   height: 75vh;
   flex: 1;
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(203, 203, 203);
   border-radius: 5vw;
   position: relative;
   overflow: hidden;
@@ -44,6 +44,9 @@ body {
   text-align: center;
   align-content: center;
   font-family: "Brush Script MT", cursive;
+  justify-self: center;
+  align-self: center;
+  margin-right: 0px;
 }
 .lowerDecorativeButtons {
   display: flex;
@@ -57,6 +60,48 @@ body {
   display: flex;
 }
 .gridElement {
-  border: 2px, solid, black;
+  border: 1px, solid, black;
   flex: 1;
+}
+.gridElementHover {
+  background-color: rgb(125, 125, 125);
+}
+.frameHeader {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  user-select: none;
+}
+.btnSettings {
+  position: fixed;
+  right: 50px;
+  top: 10px;
+  font-family: "Brush Script MT", cursive;
+  font-size: 1em;
+  color: white;
+}
+.settingsWindow {
+  border-radius: 40px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.applyBtn {
+  font-weight: 400;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(255, 175, 175);
+  user-select: none;
+}
+.applyBtn:active {
+  background-color: rgb(255, 111, 111);
 }
