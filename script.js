@@ -2,6 +2,7 @@ let gridSize = 16;
 const display = document.querySelector(".display");
 const btnSettings = document.querySelector(".btnSettings");
 let isSettingsMenuOpened = false;
+let mouseDownInDisplay = false;
 
 generateGrid(gridSize);
 
@@ -12,7 +13,6 @@ function generateGrid(gridSize) {
       display.removeChild(element);
     });
   }
-
   for (let i = 0; i < gridSize; i++) {
     let gridRow = document.createElement("div");
     gridRow.classList.add("gridRow");
@@ -24,8 +24,14 @@ function generateGrid(gridSize) {
     display.append(gridRow);
   }
 }
+display.addEventListener("mousedown", (e) => {
+  mouseDownInDisplay = true;
+});
+display.addEventListener("mouseup", (e) => {
+  mouseDownInDisplay = false;
+});
 display.addEventListener("mouseover", (e) => {
-  if (e.button === 0) {
+  if (mouseDownInDisplay) {
     const targetElement = e.target;
     targetElement.classList.add("gridElementHover");
   }
